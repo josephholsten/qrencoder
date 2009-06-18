@@ -43,6 +43,7 @@ be encoded. The second argument is a QR Code version (used to pick the size of
 the final QR Code); this version is adjusted upwards if the data is too large to
 fit within the specified version.
 
+  require 'qrencoder'
   img = QRCode.encode_string(text, 1)
   puts "#{img.version}"  #=> 7
   puts "#{img.width}"    #=> 34
@@ -55,6 +56,8 @@ methods to save a PNG file directly.
 
 This gem requires you to build the C library lib <tt>libqrcode.a</tt> available
 from http://megaui.net/fukuchi/works/qrencode/index.en.html. 
+
+This gem is built against libqrcode version qrencode-3.1.0 only.
 
 Normally, the build process also expects you to install <tt>libpng</tt>, but
 this is only used for the <tt>qrenc</tt> command-line utility and can be avoided
