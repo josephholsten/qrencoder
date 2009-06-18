@@ -7,7 +7,7 @@ rescue
 end
 
 class QRCode
-  GEM_VERSION = '1.0.1'
+  GEM_VERSION = '1.1.0'
 
   # Encoding modes
   QR_MODE_NUM = 0
